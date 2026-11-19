@@ -1,0 +1,30 @@
+[project]
+name = "pde-refined"
+version = "0.2.0"
+description = "Citeable Pennsylvania Department of Education tables, rebuilt from a catalog and queried through DuckDB."
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4==4.15.0",
+    "openpyxl==3.1.5",
+    "pandas==3.1.1",
+    "requests==2.34.2",
+    "xlrd==2.0.2",
+    "duckdb==2.0.0",
+    "pyarrow==26.0.1",
+    "pypdf==7.0.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.2.0"]
+
+[project.scripts]
+pa-edu-refine = "pa_edu.refine:main"
+pa-edu-check = "pa_edu.check:main"
+pa-edu-personnel = "pa_edu.personnel:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["pa_edu*"]

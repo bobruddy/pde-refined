@@ -1,0 +1,163 @@
+gfb_year = 2024
+gfb_aun_count = 791
+total_auns = ["101260303", "112011103"]
+
+[[gfb_cell]]
+school_year = 2024
+aun = "101260303"
+function_code = "1100"
+object_code = "100"
+program_code = ""
+
+[[afr_cell]]
+school_year = 2024
+aun = "101260303"
+fund_code = "10"
+function_code = "1110"
+object_code = "120"
+program_code = ""
+
+# Current real estate taxes. Amount1 and TotalAmount are the same number.
+[[afr_revenue_cell]]
+school_year = 2024
+aun = "124150503"
+fund_code = "10"
+account_code = "6111"
+
+# Earnings on investments. TotalAmount is blank; the figure is Amount1.
+[[afr_revenue_cell]]
+school_year = 2024
+aun = "124150503"
+fund_code = "10"
+account_code = "6500"
+
+# Current real estate taxes with a discount. The figure is TotalAmount, not Amount1.
+[[afr_revenue_cell]]
+school_year = 2024
+aun = "102027451"
+fund_code = "10"
+account_code = "6111"
+
+[[gfb_revenue_cell]]
+school_year = 2024
+aun = "124150503"
+account_code = "6111"
+
+[[enrollment_cell]]
+school_year = 2024
+aun = "124150002"
+school_number = "7691"
+grade_code = "012"
+
+[[act1_cell]]
+school_year = 2024
+aun = "101260303"
+
+[[retax_cell]]
+school_year = 2025
+aun = "124150503"
+county = "Chester"
+locality = ""
+
+[[charter_adm_cell]]
+school_year = 2024
+aun = "112011103"
+
+[[homeschool_cell]]
+school_year = 2024
+aun = "112011103"
+
+[[low_income_cell]]
+school_year = 2024
+aun = "124150002"
+
+[[iep_cell]]
+school_year = 2024
+aun = "101260303"
+
+[[cohort_grad_cell]]
+school_year = 2024
+span = 4
+aun = "124150002"
+
+[[cohort_grad_cell]]
+school_year = 2017
+span = 4
+aun = "124150002"
+
+[[assessment_cell]]
+school_year = 2024
+aun = "124150503"
+assessment = "pssa"
+subject = "ela"
+grade = "003"
+student_group = "All Students"
+
+[[assessment_cell]]
+school_year = 2024
+aun = "124150503"
+assessment = "keystone"
+subject = "algebra_i"
+grade = "011"
+student_group = "All Students"
+
+[[assessment_school_cell]]
+school_year = 2014
+aun = "124150002"
+school_number = "7691"
+subject = "ela"
+grade = "total"
+student_group = "All Students"
+
+[[assessment_school_cell]]
+school_year = 2024
+aun = "112011103"
+school_number = "7302"
+subject = "ela"
+grade = "003"
+student_group = "All Students"
+
+# City CHS. The 2016 school file has the four level percents and no combined column.
+[[assessment_school_cell]]
+school_year = 2015
+aun = "102020001"
+school_number = "7727"
+assessment = "keystone"
+subject = "algebra_i"
+grade = "011"
+student_group = "All Students"
+
+# Avon Grove HS, a district building. The 2025 school file publishes the combined percent.
+[[assessment_school_cell]]
+school_year = 2024
+aun = "124150503"
+school_number = "1367"
+assessment = "keystone"
+subject = "algebra_i"
+grade = "011"
+student_group = "All Students"
+
+# Building rows PDE published for these lines do not add up to the EXP amount.
+[[school_rollup_gap]]
+aun = "102027451"
+school_year = 2024
+fund_code = "10"
+function_code = "2519"
+object_code = "890"
+
+[[school_rollup_gap]]
+aun = "115674603"
+school_year = 2024
+fund_code = "10"
+function_code = "2260"
+object_code = "350"
+
+[[saipe_cell]]
+school_year = 2024
+aun = "101260303"
+nces_leaid = "4202100"
+
+[[saipe_cell]]
+school_year = 2008
+aun = "127041903"
+nces_leaid = "4205210"
