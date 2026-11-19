@@ -13,6 +13,7 @@ WHERE category = 'school_district';
 -- view: afr_general_fund
 -- needs: afr_expenditure
 -- about: Annual Financial Report expenditures in the general fund (fund 10).
+-- Owned by sql/model.sql. This statement must stay identical to that definition.
 
 CREATE OR REPLACE VIEW afr_general_fund AS
 SELECT *

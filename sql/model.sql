@@ -102,5 +102,6 @@ SELECT * FROM read_parquet('data/refined/professional_assignment.parquet');
 CREATE OR REPLACE VIEW professional_staff AS
 SELECT * FROM read_parquet('data/refined/professional_staff.parquet');
 
+-- This file owns afr_general_fund. sql/portal.sql repeats this statement and must not change it.
 CREATE OR REPLACE VIEW afr_general_fund AS
 SELECT * FROM afr_expenditure WHERE fund_code = '10';
