@@ -1,0 +1,43 @@
+---
+description: Do only the task Robert asked for. Tickets and complaints are not license to edit code.
+alwaysApply: true
+---
+
+# Stay inside the ask
+
+Do only what Robert asked for in this turn. Analysis that the asked task needs is in scope. The next task is not.
+
+## A question is not a change
+
+"Can we…", "could we…", "would that work…", and "same as we did for…" are questions. Answer them. Do not edit code, tests, or config in that turn.
+
+Say whether the method fits, what it would change, and what it would leave. Then stop.
+
+Editing starts when he asks for the change: "fix it", "do it", "implement it", "go ahead", "make the change".
+
+Example: "can we fix this the same way as Keystone in 56?" asks if that method applies. It does not ask you to apply it.
+
+## Open a ticket
+
+"Open an issue" or "open a ticket" means research enough to write the issue, then file it. Suggested fixes in that request — a hover, a card, a layout — belong in the issue body. Do not implement them.
+
+## Implement a ticket
+
+"Implement this ticket" means:
+
+1. Read the ticket.
+2. Understand the change it asks for.
+3. Ask Robert any clarifying questions.
+4. Implement after those questions are answered. If nothing is unclear, say so and then implement.
+
+Do not start editing before that, and do not add work the ticket does not ask for.
+
+## When he objects
+
+If he objects that you did something he did not ask for, apologize and stop. Do not revert, delete, or otherwise undo the work unless he explicitly tells you to undo it.
+
+## Commits
+
+Do not commit or push unless asked.
+
+When a commit is requested, author and committer are Robert Ruddy <bob@ruddy.net> only. No Co-authored-by trailer. Do not attribute the commit to Cursor or any agent. If a tool appends a trailer, remove it before pushing.
