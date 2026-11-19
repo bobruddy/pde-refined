@@ -22,7 +22,7 @@ The downloadable DuckDB file is decided in the schema-contract issue. This page 
 | Table | Grain |
 | --- | --- |
 | `document` | `document_id`. One retained file. `check.py` does not uniqueness-check it |
-| `lea` | `aun`. EdNA directory, plus fact AUNs missing from that extract. `check.py` does not uniqueness-check it |
+| `lea` | `aun`. EdNA directory. An AUN missing from that extract is added only from `lea_year`, `enrollment`, `assessment_result`, `enrollment_iep`, `enrollment_low_income`, or `cohort_graduation`, newest `school_year` first. `check.py` does not uniqueness-check it |
 | `lea_year` | `school_year` × `aun` × `document_id`. Name and county printed on that finance file. `check.py` does not uniqueness-check it |
 | `nces_district` | `nces_leaid`. CCD id, with `aun` on the row. `check.py` does not uniqueness-check it |
 | `school` | `aun` × `school_number`. School name from the newest enrollment year for that pair. No `document_id`. `check.py` does not uniqueness-check it |

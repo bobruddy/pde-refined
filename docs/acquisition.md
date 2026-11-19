@@ -54,8 +54,8 @@ On a full catalog run, `refine` also downloads workbook links from those pages t
 
 The EdNA directory extract (`parser = "edna"`, `fetch = "edna"`) is the LEA source. It writes `lea`: one row per AUN, with the directory name, category, status, and county. `in_directory` is true on those rows.
 
-An AUN that shows up on a fact file and is missing from that extract is added to `lea` with `in_directory` false, so the fact still has a directory key. The added name comes from the newest finance row, then enrollment, then assessment.
+An AUN missing from that extract is added to `lea` only from six frames: `lea_year`, `enrollment`, `assessment_result`, `enrollment_iep`, `enrollment_low_income`, and `cohort_graduation`. The newest `school_year` is chosen first, so a later enrollment year beats an older finance row. Within one year the order is finance, then enrollment, then assessment, then IEP, then low income, then cohort graduation. The added row has `in_directory` false and `status` unknown. An AUN that appears only on another table, such as `charter_adm` or `real_estate_tax`, is not added.
 
-The name printed on a finance or enrollment file stays on that file's rows. Finance names for a year are `lea_year` (`lea_name`, `county`, `inst_cat`, and the `document_id` of the file). Enrollment, assessment, and the other fact tables keep their own `lea_name` column. Those columns are the name on that file. They are not a copy of the EdNA name.
+The name printed on a finance or enrollment file stays on that file's rows. Finance names for a year are `lea_year` (`lea_name`, `county`, `inst_cat`, and the `document_id` of the file). Where a fact table has `lea_name`, that value is the name on that file, not a copy of the EdNA name.
 
 Professional staff is a separate command, `python -m pa_edu.personnel`. It uses the same raw-cache and extract rules, with `source_id` `personnel`. The staff grain is in [schema.md](schema.md).
